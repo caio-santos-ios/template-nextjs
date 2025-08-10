@@ -17,7 +17,7 @@ const dataSales = {
 };
 
 const dataPie = {
-  labels: ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Porto Alegre'],
+  labels: ['São Paulo', 'Rio de Janeiro', 'Minas Gerais', 'Rio Grande do Sul'],
   datasets: [
     {
       label: '# Vendas por estado',
