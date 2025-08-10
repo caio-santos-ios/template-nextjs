@@ -1,0 +1,110 @@
+.sidebar-account {
+    background-color: rgb(33, 33, 33);
+    height: calc(100dvh - 5rem);
+    width: 100dvw;
+}
+
+.sidebar-account-open {
+    display: flex;
+}
+
+.sidebar-account-close {
+    display: none;
+}
+
+.sidebar-account-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.sidebar-account-header {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #999999 3px solid;
+    padding: .5rem;
+}
+
+.sidebar-account-name {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.sidebar-account-list {
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.sidebar-account-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(153, 153, 153);
+    box-shadow: rgb(0, 0, 0) 0px 0px 8px;
+    padding: .5rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .sidebar-account {
+        height: 100dvh;
+        width: 5rem;
+    }
+
+    .sidebar-account-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 2rem;
+        padding-top: 4.5rem;
+    }
+
+    .sidebar-account-header {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #999999 3px solid;
+        padding: .5rem;
+    }
+    
+    .sidebar-account-name {
+        display: none;
+    }
+
+    .sidebar-account-list {
+       flex-flow: column;
+       align-items: center;
+       border-top: rgb(153, 153, 153) 1px solid;
+       padding: 1rem;
+       width: 3rem;
+    }
+
+    .sidebar-account-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: rgb(153, 153, 153);
+        box-shadow: rgb(0, 0, 0) 0px 0px 8px;
+        padding: .5rem;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+    }
+}

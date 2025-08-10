@@ -1,0 +1,35 @@
+.app {
+    background-color: rgb(19, 19, 19);
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.app-content {
+    height: calc(100dvh - 5rem);
+    width: 100dvw;
+    padding: 1rem;
+    overflow-y: auto;
+    scrollbar-width: none;      
+    -ms-overflow-style: none;  
+    
+    ::-webkit-scrollbar {
+        display: none; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .app {
+        height: 100dvh;
+        width: 100dvw;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .app-content {
+        height: 100dvh;
+        max-height: 100dvh;
+        width: calc(100dvw - 10rem);
+        padding: 1rem;
+        margin-left: 5rem;       
+    }
+}
