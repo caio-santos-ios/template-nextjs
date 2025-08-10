@@ -1,15 +1,11 @@
 "use client"
 
-import { useEffect } from "react";
 import { Header } from "../Header/Header";
 import { SidebarAccount } from "../SidebarAccount/SidebarAccount";
 import { SidebarMenu } from "../SidebarMenu/SidebarMenu";
 import "./style.css";
 
 export const App = ({ children }: { children: React.ReactNode }) => {
-    useEffect(() => {
-        console.log("teste")
-    }, [])
     return (
         <div className="app">
             <Header/>

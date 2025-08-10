@@ -6,22 +6,17 @@ import { faBars, faUserCircle, faXmark } from "@fortawesome/free-solid-svg-icons
 import { openMenuAtom } from "@/stores/menu/menu.jotai";
 import { useAtom } from "jotai";
 import { openAccountAtom } from "@/stores/sidebar/sidebar.jotai";
-import { useEffect } from "react";
 
 export const Header = () => {
     const [menuOpen, setMenuOpen] = useAtom(openMenuAtom);
     const [accountOpen, setAccountOpen] = useAtom(openAccountAtom);
-
-    useEffect(() => {
-        console.log(menuOpen)
-        console.log(accountOpen)
-    }, [])
 
     const open = (type: "menu" | "account") => {
         if(type === "menu") {
             setMenuOpen(true);
             setAccountOpen(false);
         } else {
+            console.log(type)
             setMenuOpen(false);
             setAccountOpen(true);
         };

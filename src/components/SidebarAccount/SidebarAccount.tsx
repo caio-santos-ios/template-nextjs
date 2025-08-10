@@ -3,10 +3,14 @@
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faGear, faHeadphones, faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { useAtom } from "jotai";
+import { openAccountAtom } from "@/stores/sidebar/sidebar.jotai";
 
 export const SidebarAccount = () => {    
+    const [accountOpen] = useAtom(openAccountAtom);
+    
     return (
-        <div className="sidebar-account">
+        <div className={`sidebar-account ${accountOpen ? 'sidebar-account-open' : 'sidebar-account-close'}`}>
             <div className="sidebar-account-content">
                 <div className="sidebar-account-header">
                     <FontAwesomeIcon onClick={() => open('account')} icon={faUserCircle} />
